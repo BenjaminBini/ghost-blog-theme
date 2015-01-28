@@ -1,0 +1,45 @@
+{{!< default}}
+<article role="article" itemscope="" itemtype="http://schema.org/BlogPosting" class="postwrap_nix">
+<div class="postinner_nix nixclear" itemprop="articleBody">
+<h2>Bonjour ! </h2>
+
+<p>Je démarre ici un blog sur le développement, j'espère que les quelques articles et tutoriaux que j'y proposerai vous serons utiles ! 
+J'aborderai divers sujets, du backend (NodeJS, Java EE, Python...) mais aussi du front (SASS, Bootstrap, Angular, Dart...) et peut-être quelques articles un peu plus portés "essais" si l'inspiration me vient.
+</p>
+<p>Pour info, je m'appelle Benjamin Bini, je suis ingénieur logiciel dans une SSII Strasbourgeoise et vous pouvez me retrouver principalement sur <a href="http://twitter.com/BenjaminBini">Twitter</a> et <a href="https://www.linkedin.com/pub/benjamin-bini/28/844/641">LinkedIn</a>.
+</p>
+</div>
+</article>
+<div class="article_list">
+	{{#each posts}}<article role="article" itemscope itemtype="http://schema.org/BlogPosting" class="article_card">
+	
+		<a href="{{{url}}}" rel="bookmark">
+			<div class="article_img">
+				<img src="{{image}}"/>
+				<span class="article_img_align_helper"></span>
+			</div>
+
+			<div class="article_link">
+				{{{title}}}
+				<time datetime="{{date format="DD-MM-YYYY"}}" itemprop="datePublished"><i class="nix_icon-calendar"></i>{{date format='DD/MM/YYYY'}}</time>
+			</div>
+		</a>
+	</article>{{/each}}
+</div>
+{{#if pagination}}
+<div class="subwrap_nix"><div class="subtop_nix"></div>
+<div class="pagination_nix">{{{pagination}}}</div>
+</div>
+{{/if}}
+
+<footer class="post_footer_nix">
+<address itemscope="" itemtype="https://schema.org/Person">
+<div class="authorimage_nix"><img src="//www.gravatar.com/avatar/b2b3f497dcf706403f7f3ef94d1ef111?d=404&amp;s=250" itemprop="image" class="hoverZoomLink"></div>
+<h4 class="nix_author"><span itemprop="author">Benjamin Bini</span></h4>
+
+<p itemscope="" itemtype="https://schema.org/PostalAddress"><span itemprop="addressLocality">Strasbourg, France</span></p>
+</address>
+<div class="author_nix">
+<p>Ingénieur en informatique chez Sully Group.</p>
+</div>
+</footer>
