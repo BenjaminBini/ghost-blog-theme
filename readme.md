@@ -1,6 +1,6 @@
 # Ghost theme - bini.io
 
-## Description:
+## Description
 [Ghost](https://github.com/TryGhost/Ghost) theme used on [bini.io blog](https://blog.bini.io).
 
 ## Customize
